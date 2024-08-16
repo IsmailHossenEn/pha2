@@ -104,6 +104,7 @@
   font-size: 78px;
   color: #fff;
   line-height: 120px;
+  overflow: hidden;
 }
 .banner .banner_heading span {
   font-family: "Miama";
@@ -236,7 +237,13 @@
   .banner .banner_heading {
     font-size: 36px;
     color: #fff;
-    line-height: 120%;
+    line-height: 50px;
+  }
+
+  .banner .banner_heading span {
+    font-family: "Miama";
+    font-weight: 500;
+    font-size: 120px;
   }
   .banner .banner_heading span {
     font-family: "Miama";
