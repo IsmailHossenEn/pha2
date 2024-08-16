@@ -224,6 +224,39 @@
 }
 
 /* Media Quaries */
+@media all and (min-width: 769px) and (max-width: 1440px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 100px 20px 0 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .box_left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding-right: 10px;
+  }
+  .box_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    position: relative;
+  }
+  .mini_box_two {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -50px;
+    right: 580px;
+  }
+}
 @media all and (min-width: 577px) and (max-width: 768px) {
   .banner {
     flex-direction: column;
