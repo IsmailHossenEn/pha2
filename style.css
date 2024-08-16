@@ -59,6 +59,35 @@
   font-weight: 600;
 }
 
+.font_awesome {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .font_awesome {
+    display: block;
+  }
+  .navBar {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .navBar .navItems {
+    display: none;
+  }
+}
+
+@media all and (min-width: 577px) and (max-width: 768px) {
+  .font_awesome {
+    display: none;
+  }
+  .navBar {
+    width: 100%;
+    padding: 20px 30px;
+  }
+}
 /* Banner Section */
 
 .banner {
@@ -194,11 +223,74 @@
 }
 
 /* Media Quaries */
-
-@media only screen and (max-width: 425px) {
-  .navBar {
-    display: none;
+@media all and (min-width: 577px) and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 50px 20px 0 20px;
+    width: 100%;
+    margin: 0 auto;
   }
+  .banner .banner_heading {
+    font-size: 36px;
+    color: #fff;
+    line-height: 120%;
+  }
+  .banner .banner_heading span {
+    font-family: "Miama";
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .box_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 190%;
+    padding: 30px 20px 80px 20px;
+  }
+  .box_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    position: relative;
+  }
+  .grp_btn {
+    margin-bottom: 50px;
+  }
+  .mini_box_one {
+    position: absolute;
+    top: 680px;
+    right: 180px;
+  }
+  .mini_box_two {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -200px;
+    right: 480px;
+  }
+  .banner .banner_heading {
+    font-size: 78px;
+    color: #fff;
+    line-height: 90px;
+    text-align: center;
+  }
+  .paragraph {
+    color: #ffffff7a;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 40px 0px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
   .banner {
     flex-direction: column;
     gap: 0px;
@@ -249,7 +341,7 @@
 
   .mini_box_one {
     position: absolute;
-    top: 450px;
+    top: 550px;
     right: 20px;
   }
   .mini_box .mini_box_heading {
@@ -348,7 +440,7 @@
   padding: 0px 30px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 576px) {
   .Habit_wrapper {
     width: 100%;
     margin: 0 auto;
@@ -503,7 +595,7 @@
   background-blend-mode: multiply;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 576px) {
   .exercises {
     padding: 50px 20px;
   }
@@ -564,7 +656,7 @@ td {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {
   .bmi {
     width: 100%;
   }
@@ -893,7 +985,7 @@ footer .f_paragraph {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {
   footer {
     display: flex;
     flex-direction: column;
